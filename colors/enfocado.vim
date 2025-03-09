@@ -1773,6 +1773,32 @@ if enfocado#pluginIsActivated('packer', 1)
   highlight! link packerBreakingChange DiagnosticWarn
 endif
 " }}}
+" Oil: {{{
+if enfocado#pluginIsActivated('Oil', 1)
+  highlight! link OilDir Directory
+  highlight! link OilFile Text
+  highlight! link OilMove None
+  highlight! link OilPurge None
+  highlight! link OilTrash None
+  highlight! link OilChange None
+  highlight! link OilCreate None
+  highlight! link OilDelete None
+  highlight! link OilHidden None
+  highlight! link OilSocket None
+  highlight! link OilDirIcon Search
+  highlight! link OilRestore None
+  highlight! link OilDirHidden Directory
+  highlight! link OilFileHidden DiffText
+  highlight! link OilLinkTarget None
+  highlight! link OilLinkHidden None
+  highlight! link OilLinkTargetHidden None
+  highlight! link OilSocketHidden None
+  highlight! link OilTrashSourcePath None
+  highlight! link OilOrphanLinkHidden None
+  highlight! link OilOrphanLinkTarget None
+  highlight! link OilOrphanLinkTargetHidden None
+endif
+" }}}
 " rainbow: {{{
 if enfocado#pluginIsActivated('rainbow', 0)
   let s:rainbow_guifgs = [s:accent_1[0], s:cyan[0], s:accent_0[0], s:br_accent_1[0]]
